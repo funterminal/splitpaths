@@ -80,7 +80,7 @@ To remove splitpaths:
 
 ## License
 
-The project is open-source and under MIT License 
+The project is open-source and under GNU GPL v3 or later
 
 ## Contributing
 
