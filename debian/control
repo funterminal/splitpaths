@@ -1,0 +1,13 @@
+Source: splitpaths
+Section: utils
+Priority: optional
+Maintainer: @funterminal <calestialashley@gmail.com>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.5.0
+Homepage: https://github.com/funterminal/splitpaths.git
+
+Package: splitpaths
+Architecture: all
+Depends: ${misc:Depends}
+Description: Simple shell script to split paths by "/"
+ A tiny shell tool that splits path strings into individual components.
