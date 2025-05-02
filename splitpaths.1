@@ -1,0 +1,66 @@
+.TH SPLITPATHS 1 "May 2025" "splitpaths 1.0" "User Commands"
+.SH NAME
+splitpaths \- split POSIX-style path strings into individual components
+.SH SYNOPSIS
+.B splitpaths
+[\fIPATH\fR]...
+.SH DESCRIPTION
+The splitpaths script takes one or more POSIX-style file or directory paths and splits them into their individual components (i.e., the segments between the "/" separators).
+Each component of the path will be printed on a new line.
+
+This can be useful for extracting directory names, handling path manipulations, or debugging path-related issues in shell scripts.
+
+The script processes the paths in the arguments and outputs each component of each path on a new line. It works by using `awk` to break each path into parts and print them.
+
+.SH OPTIONS
+There are no additional options or flags for this script. It only takes the paths to split as arguments.
+
+.SH EXAMPLES
+.TP
+.B splitpaths /usr/local/bin
+Will output:
+.nf
+usr
+local
+bin
+.fi
+
+.TP
+.B splitpaths /home/user/documents/projects
+Will output:
+.nf
+home
+user
+documents
+projects
+.fi
+
+.TP
+.B splitpaths "/var/www/html /usr/bin"
+Will output:
+.nf
+var
+www
+html
+usr
+bin
+.fi
+
+.SH AUTHOR
+Written by @funterminal <calestialashley@gmail.com>
+
+.SH HOMEPAGE
+The official repository for this script is hosted on GitHub:
+https://github.com/funterminal/splitpaths.git
+
+.SH LICENSE
+This script is licensed under the GNU General Public License v3 or later.
+You can redistribute and/or modify it under the terms of the GPL-3+.
+
+This program comes with no warranty. See the LICENSE file in the source code for more details.
+
+.SH SEE ALSO
+For further information about shell scripting and manipulating file paths, see:
+.BR bash(1), 
+.BR awk(1), 
+.BR path(7)
