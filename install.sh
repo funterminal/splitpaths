@@ -78,7 +78,7 @@ case "$SHELL_NAME" in
         ;;
 esac
 
-echo "alias splitpaths='sh $(pwd)/splitpaths.sh'" >> "$CONFIG_FILE"
+echo "alias splitpaths='./splitpaths'" >> "$CONFIG_FILE"
 echo 'man() {' >> "$CONFIG_FILE"
 echo '  if [[ "$1" == "splitpaths" ]]; then' >> "$CONFIG_FILE"
 echo '    command man ./splitpaths.1' >> "$CONFIG_FILE"
