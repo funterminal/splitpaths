@@ -11,7 +11,7 @@
 - **Stream processing**: Handles multiple paths from command line arguments
 - **Empty path handling**: Silently skips empty path strings
 - **Delimiter awareness**: Properly handles both absolute and relative paths
-- 
+
 ## Installation
 
 The installation process fetches the script and manpage, then configures your shell environment:
